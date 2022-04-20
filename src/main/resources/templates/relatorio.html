@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Cadastro de Músicas</title>
+	</head>
+	<body>
+		<h1>Relatorio de Músicas</h1>
+			<ul th:each="musica : ${lista}">
+				<li th:text="${musica.nome}">
+				<li th:text="${musica.duracao}">
+				<li th:text="${musica.estilo}">
+			</ul>
+		
+	</body>
+</html>

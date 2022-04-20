@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Cadastro de Músicas</title>
+	</head>
+	<body>
+		<h1>Cadastro de Músicas</h1>
+		<form th:action="@{/cadastroMusica}"
+		method="POST" th:object="${musica}">
+			nome:<input type="text" 
+					th:field="*{nome}"><br/>
+			duracao:<input type="text" 
+					th:field="*{duracao}"><br/>
+			estilo:<input type="text" 
+					th:field="*{estilo}"><br/>
+		<input type="submit" value="Cadastrar">
+		</form>
+	</body>
+</html>
